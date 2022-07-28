@@ -4,7 +4,7 @@
 - Link: https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction?select=train.csv 
 - Description: The dataset provides information to predict whether health insurance customers are interested in Vehicle Insurance.
 - Method: Using the Logistic Regression Algorithm.
-- Dataset contains 381,109 rows, 12 columns.
+- Dataset contains 381,109 rows and 12 columns.
 
 |Property|Description|Data type|
 | --- | --- | --- |

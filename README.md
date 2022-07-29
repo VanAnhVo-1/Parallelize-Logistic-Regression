@@ -40,4 +40,21 @@
         - Multiply the result by the value in x to return the weighted gradients.
       - Defines the function cum_sum_gradients bt Multipling 2 arrays with shape (1,n).
       - Define function distributed_gradient_descent:
-        - Initialize the weight matrix with shape (1, n), with n = length of a data line – 2 (because id at index 0 and label at index -1). Then convert the weight matrix to a list (list)
+        - Initialize the weight matrix with shape (1, n), with n = length of a data line – 2 (because id at index 0 and label at index -1). Then convert the weight matrix to a list (list).
+        - Caculate m - total of rows
+        - Optimize weight matrix by gradient_descent algorithm.
+      - Define function predict.
+  3. Result
+      - Define accuracy funtion.
+      - Train model
+      - In the first times, the accuracy = 100%  and total runtime = 1098.4s = 0.305h that unconvinced because the decision attribute value is only 0.
+      - In the second times, split data into train and test with 0.8:0.2. The accuracy = 87.58% and total runtime = 842s = 0.233h.
+  4. Evaluate
+      - Define score function and choose class 0 (not concern) is the important class.
+      - Caculate score_array, precision, recall and f1_score.
+      - Show results using heatmap.
+![image](https://user-images.githubusercontent.com/72924182/181673238-0b3b6ccc-9688-4e48-809e-5e7fb0221245.png)
+  5. Comment
+      - With Logistic Regression, the accuracy is 87.39%.
+      - There are 66322 surveys predicting no interest (class 0) true to reality. There are 172 surveys predicting interest (class 1) true to reality. There were 313 surveys that were misclassified (predicted as interested but in fact not interested). There were 9276 surveys missed (predicted not interested but actually interested).
+      - There are precsion, recall, f1_score of 0.877, 0.995, 0.932 respectively. With this result, we can see that the accuracy of the found points is high, every postitive point is found. Both precision and recall values are close to 1, so the classification model is good. We have high f1_score so this is better classifier.
